@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<!--head section from live site-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go Offer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-158172520-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-158172520-1');
+        </script>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.linkmink.com/lm-js/2.2.0/lm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/226e61f0c3.js"></script>
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/40/12/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/40/12/util.js"></script>
+
+</head>
+<!--End head section from live site-->
+
+
+<!--normal head section that outputs above when loaded in Phalcon Framework
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Go Offer</title>
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo $this->url->get('img/favicon.ico')?>"./>
+        Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158172520-1"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-158172520-1');
+            </script>
+
+        <!--{{ assets.outputCss() }}-->
+        <!--{{ assets.outputJs('header') }}
+</head>-->
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><img src=./img/Go-Offer-Logo.png style="max-height:100px;"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> 
+
+            <ul class="left hide-on-med-and-down">
+                <li><a href="./search">Search</a></li>
+                <li><a href="./user/privacyPolicy">Privacy Policy</a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Log out</a></li>
+                <li><a href="badges.html">My Account</a></li>
+                <li><a href="collapsible.html">Log in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="./search">Search</a></li>
+        <li><a href="./user/privacyPolicy">Privacy Policy</a></li>
+        <li><a href="sass.html">Log out</a></li>
+        <li><a href="badges.html">My Account</a></li>
+        <li><a href="collapsible.html">Log in</a></li>
+    </ul>
+
+
+
+        
+    <div class="">
+        <div class="row center GoHero">
+            <div class="GoHeroCard">
+                
+                <div class="GoHeroCardInner">
+                    <h2>Never worry if  it’s <br> a deal again</h2>
+                    <h4>Calculate your offer in 5 seconds ...</h4>
+                    <h5>Sign up and start your seven day free trial today</h5>
+
+                    <div class="GoHeroCardButtons">  
+                        <div class="GoHeroCardButtons">
+                            <a class="" href="/user/register">
+                                <button type="button" class="waves-effect waves-light btn-large">Sign Up</button>
+                            </a>
+                            <p>- new users</p>
+                        </div>
+
+                        <div class="GoHeroCardButtons">
+                            <a class="" href="/user/login">
+                                <button type="button" class="waves-effect waves-light btn-large">Log In</button>
+                            </a>
+                            <p>- existing users</p>
+                        </div> 
+                    </div>
+
+                </div>
+
+
+                <div class="GoHeroVideoCardInner">
+                    <h2>How it works</h2>
+                        <div class="GoHeroVideoCardContainer">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/soyRQ9SATB4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!--{{ assets.outputJs('footer') }}-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+    </body>
+</html>

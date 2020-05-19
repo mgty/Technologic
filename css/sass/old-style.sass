@@ -1,0 +1,201 @@
+/* INSPINIA - Responsive Admin Theme version 2.8 */
+
+// Google Fonts
+
+
+// Glyphicons from Bootstrap 3.3.7
+@import "glyphicons"
+
+// Variables, Mixins
+@import "variables"
+@import "mixins"
+
+// INSPINIA Theme Elements
+@import "typography"
+@import "navigation"
+@import "top_navigation"
+@import "buttons"
+@import "badges_labels"
+@import "elements"
+@import "sidebar"
+@import "base"
+@import "pages"
+@import "chat"
+@import "metismenu"
+@import "spinners"
+
+// Landing page styles
+@import "landing"
+
+// RTL Support
+@import "rtl"
+
+// For demo only - config box style
+@import "theme-config"
+
+// INSPINIA Skins
+@import "skins"
+@import "md-skin"
+
+// Media query style
+@import "media"
+
+// Custom style
+// Your custom style to override base style
+@import "custom"
+
+// Clear layout on print mode
+@media print
+  nav.navbar-static-side
+    display: none
+
+  body
+    overflow: visible !important
+    
+
+  #page-wrapper
+    margin: 0
+
+.spinner-container > .sk-spinner 
+  display: none
+
+.sk-loading > .sk-spinner 
+  display: block!important
+  z-index: 2000
+
+
+
+.GoHero
+  background-image: url('/img/gooffer-website-background2.jpg')
+  height: 100%
+  margin-top: 0px !important
+  background-size: cover
+  background-repeat: no-repeat
+
+.GoHeroCard
+  background-color: rgba(0,0,0,.15)
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,.99))
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,.99))
+  -moz-filter: drop-shadow(2px 2px 2px rgba(0,0,0,.99))
+  color: rgba(255,255,255,.99)!important
+  bottom: 0
+  top: 0
+  left: 0
+  right: 0
+  width:100%
+  
+
+
+.GoHeroCardInner
+    margin:5vh 5vw 0vh 5vw
+    padding: 2em 1em 1em 1em
+
+
+.GoHeroCardButtons
+  display: inline-block
+  text-align: right!important
+  margin-right:1.75em
+  padding-left:10em
+
+
+.GoHeroButton
+  color: rgba(255,255,255,.99)
+  font-size: 23px!important
+  font-weight: 500!important
+  padding: .25em 1.56em!important
+
+.CardAccount  p
+  margin-bottom:.5em
+  margin-left:.5em
+
+.CardAccount  h5
+  margin-bottom:.1em  
+
+.GoHeroCardButtona 
+  float: right
+
+.GoHeroCardButtonb
+  float: right
+  margin-left: none
+
+.GoHeroCardInner > h2
+  font-size: 2.3rem!important
+  line-height: 1
+
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+  -moz-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+  color: rgba(255,255,255,.99)!important
+
+.GoHeroCardInner > h4
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+  -moz-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+  font-size:1.6em
+
+.GoHeroCardInner > p
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+  -moz-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+
+.GoHeroVideoCardInner
+  display: block
+  margin: 0vh 5vw 0vh 5vw
+  padding: 0em 1em 1em 1em
+
+.GoHeroVideoCardInner >h2
+  font-size: 2.3rem!important
+  line-height: 1
+.GoHeroVideoCardContainer
+  margin:5em -1.5em 1em -1.5em
+  height:35vh
+
+
+
+$layout-breakpoint-small: 768px
+
+@media (min-width: $layout-breakpoint-small)
+  .GoHero
+     background-image: url('/img/gooffer-website-background1.jpg')
+
+  .GoHeroCardInner
+    margin: 15vh 15vw 5vh 15vw
+    padding: 1em 1em 1em 5em
+  
+  .GoHeroCardInner > h2
+     font-size: 6rem!important
+     line-height: 1
+
+  .GoHeroCardInner > h4
+     font-size:2em
+
+  .GoHeroCardButtons
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+    -moz-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.49))
+    text-align: right!important
+    margin-right:1.75em
+    padding-left:10em
+
+  .GoHeroCardButtons
+      text-align: center!important
+      margin-top:2em
+
+  .GoHeroCardButtona 
+    float: left
+
+  .GoHeroCardButtonb
+    float: left
+    margin-left:6em
+ 
+  .GoHeroVideoCardInner
+    display: block
+    margin: 5vh 15vw 5vh 15vw
+    padding: 1em 1em 1em 5em
+  
+  .GoHeroVideoCardContainer
+    height:65vh
+
+  .GoHeroVideoCardInner >h2
+    font-size: 4rem!important
+    line-height: 1
